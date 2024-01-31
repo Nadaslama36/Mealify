@@ -1,0 +1,190 @@
+/* container */
+@media screen and (min-width:1400px){
+    .container{
+        max-width: 1320px;
+    }
+}
+@media screen and (max-width:1400px){
+    .container{
+        max-width: 1140 px;
+    }
+}
+@media screen and (max-width:1200px){
+    .container{
+        max-width: 960 px;
+    }
+}
+@media screen and (max-width:992px){
+    .container{
+        max-width: 720px;
+    }
+}
+@media screen and (max-width:768px){
+    .container{
+        max-width: 540px;
+    }
+}
+@media screen and (max-width:576px){
+    .container{
+        padding-inline: 15px;
+    }
+}
+/* navbar */
+@media screen and (max-width:1200px){
+    .menu-icon{
+        display:block;
+    }
+    nav ul{
+       transform:translateX(100%);
+        position: absolute;
+        background-color:#fff;
+        flex-direction: column;
+        width: 350px;
+        top: 0;
+        right: 0;
+        height: 100%;
+        padding-inline: 10px;
+        gap: 0;
+    }
+    nav ul li{
+        padding-block: 20px;
+    }
+    nav ul li.close-icon{
+        display: block;
+        text-align: right;
+         }
+    nav ul li.close-icon a{
+        font-size: 25px;
+         }
+         nav div.mode{
+            margin-left: auto;
+            margin-right: 20px;
+         }
+
+}
+    
+/* header */
+@media screen and (min-width:1200px){
+    header{
+        min-height: 100vh;
+    }
+}
+@media screen and (max-width:992px){
+    header .container{
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
+    header .container>*{
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+   header .btn-main{
+    border-radius: 100vh;
+   }    
+}
+@media screen and (max-width:400px){
+       header .buttons-groub{
+        flex-direction: column;
+       } 
+}
+/* chefs */
+@media screen and (max-width:992px){
+    .chefs-cards .card{
+        width: calc(calc(100% - var(--gap)) /2);
+      
+    }
+}
+@media screen and (max-width:768px){
+    .chefs-cards .card{
+        width: 100%;
+      
+    }
+}
+/* gallary */
+@media screen and (max-width:1400px){
+    .gallery-imags{
+        height: 1200px;
+    }
+}
+@media screen and (max-width:1200px){
+    .gallery-imags{
+        height: 990px;
+    }
+}
+@media screen and (max-width:992px){
+    .gallery-imags{
+        height: 1400px;
+    }
+    .gallery-imags picture{
+        width: calc(calc(100% - var(--gap))/2);
+    }
+    .pizza{
+        order: 1;
+    }
+    .burger{
+        order: 2;
+    } 
+    .steak{
+        order: 5;
+    } 
+    .kebab{
+        order: 7;
+    }
+    .checken{
+        order: 6;
+    }
+    .Frittata{
+        order: 3;
+    }
+    .pizza-slices{
+        order: 4;
+    }
+}
+@media screen and (max-width:768px){
+    .gallery-imags{
+        height: auto;
+    }
+    .gallery-imags picture{
+        width: 100%;
+    }
+}
+/* contact */
+@media screen and (max-width:992px){
+    .contact .input-group input{
+        width:100%;
+    }
+}
+@media screen and (max-width:768px){
+    .contact .input-group input{
+        width:100%;
+    }
+    .contact .contact-means > div{
+        width: 100%;
+       
+    }
+}
+/* footer */
+@media screen and (max-width:1200px){
+    footer :is( .about , .contact-details){
+        width: calc(calc(100% - var(--gap) *2) / 2);
+        order: 1;
+    }
+     footer :is(.subscription){
+        width: 100%;
+        order: 2;
+     }
+}
+@media screen and (max-width:768px){
+    footer :is( .about , .contact-details ,.subscription){
+        width: 100%;
+        order: 0;
+        
+    }
+   
+}
+ 
+    

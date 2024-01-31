@@ -1,0 +1,50 @@
+
+:root:has(.mode input:checked){
+      --color-default:#fff;
+      --primary-hue: 40;
+      --primary-seturation: 70%;
+      --primary-lightness:35%;
+      --color-primary: hsl(
+          var(--primary-hue),
+          var(--primary-seturation),
+          var(--primary-lightness)
+          );
+          --color-secondary:#fff;
+          --color-tertiary:#9f9f9f;
+          --light-hue:0;
+          --light-seturation:0%;
+          --light-lightness:9%;
+          --color-light: hsl(
+              var(--light-hue),
+              var(--light-seturation),
+              var(--light-lightness)
+          );
+          --color-light-grey:#252525;
+}
+
+body:has(.mode input:checked){
+    background-color: #202020;
+}
+body:has(.mode input:checked) .card picture::before{
+    background-image: url(../images/svgexport-1\ dark.svg);
+}
+
+
+
+
+body:not(:has(:target)):has(.mode input:checked) .home-link,
+body:has(.home:target) :has(.mode input:checked).home-link,
+body:has(.chefs:target) :has(.mode input:checked).chefs-link,
+body:has(.gallery:target) :has(.mode input:checked).gallery-link,
+body:has(.contact:target) :has(.mode input:checked) .contact-link{
+    color: #fff;
+}
+body:has(.mode input:checked) nav a:hover{
+    color: #fff;
+ }
+ body:has(.mode input:checked) .mode .light{
+display: block;
+ }
+ body:has(.mode input:checked) .mode .dark{
+display: none;
+ }
